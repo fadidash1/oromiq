@@ -8,6 +8,9 @@
     <meta name="keywords" content="agenzia digitale, marketing strategico, web design, SEO, branding, crescita aziendale, lead generation">
     <meta name="author" content="OROMIQ">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/fav.svg.svg">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.oromiq.com/">
@@ -21,10 +24,6 @@
     <meta property="twitter:title" content="OROMIQ – Digital Growth Agency | Soluzioni su Misura per il Tuo Business">
     <meta property="twitter:description" content="Risolviamo le tue sfide digitali con strategie personalizzate. Aumentiamo visibilità, lead e conversioni per la tua azienda.">
     <meta property="twitter:image" content="https://oromiq.com/images/social-preview.jpg">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" href="favicon.ico">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -124,6 +123,19 @@
             height: 100%;
             z-index: 1;
             opacity: 0.7;
+        }
+
+        /* Logo Styles */
+        .logo {
+            height: 500px;
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                height: 500px;
+            }
         }
 
         /* Hero Heading */
@@ -495,7 +507,8 @@
             <div class="hero-bg-gradient"></div>
             
             <div class="relative z-10 p-4">
-                <h1 class="hero-heading text-7xl md:text-8xl lg:text-9xl font-extrabold mb-4">OROMIQ</h1>
+                <!-- OROMIQ Logo -->
+                <img src="/img/OROMIQ LOGO NO WORD TRANSPARENT.png" alt="OROMIQ Logo" class="logo mx-auto">
                 <p class="hero-subtitle text-xl md:text-2xl lg:text-3xl neon-gold mb-10 font-semibold">Digital Growth Agency - Risultati misurabili per il tuo business</p>
                 <div class="hero-buttons flex flex-col md:flex-row gap-6 justify-center">
                     <a href="#contact" class="btn-primary">Prenota una consulenza</a>
@@ -734,7 +747,8 @@
                     <p class="text-sm text-gray-400 mt-2">per un brand di moda</p>
                 </div>
             </div>
-<!--<div class="max-w-4xl mx-auto glassmorphic-card p-8 md:p-12 reveal-item">
+
+            <!--<div class="max-w-4xl mx-auto glassmorphic-card p-8 md:p-12 reveal-item">
                 <div class="flex flex-col md:flex-row gap-6 items-center">
                     <div class="flex-shrink-0">
                         <div class="w-24 h-24 rounded-full bg-gray-700 flex items-center justify-center text-4xl text-gold-400">
@@ -746,8 +760,7 @@
                         <p class="font-semibold text-gold-400">Marco Rossi, CEO di Luxury Italian Brands</p>
                     </div>
                 </div>
-            </div> -->
-            
+            </div>-->
         </section>
 
         <!-- Process Section -->
@@ -889,7 +902,8 @@
     <footer class="bg-black py-12 px-4 md:px-8 lg:px-16 text-center text-gray-400 relative">
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent opacity-50"></div>
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-lg font-bold text-white">OROMIQ</div>
+            <!-- Footer Logo -->
+            <img src="oromiq-logo.png" alt="OROMIQ Logo" class="h-12">
             <div class="flex gap-6">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
@@ -1076,33 +1090,6 @@
             // For this example, we'll just show an alert and reset the form
             alert(`Grazie ${name} per la tua richiesta! Ti contatteremo al più presto.`);
             this.reset();
-            
-            // In a real implementation, you would use fetch or AJAX to send the data:
-            /*
-            fetch('/send-contact-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: name,
-                    email: email,
-                    phone: phone,
-                    company: company,
-                    service: service,
-                    message: message
-                }),
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('Grazie per il tuo messaggio! Ti risponderemo al più presto.');
-                document.getElementById('contactForm').reset();
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('Si è verificato un errore. Per favore riprova più tardi.');
-            });
-            */
         });
     </script>
 </body>
