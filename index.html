@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita</title>
-    <meta name="description" content="OROMIQ: Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate che uniscono saggezza antica e innovazione moderna.">
-    <meta name="keywords" content="OROMIQ, soluzioni digitali, marketing, web design, SEO, branding, crescita aziendale, strategia digitale">
+    <title>OROMIQ – Digital Growth Agency | Soluzioni su Misura per il Tuo Business</title>
+    <meta name="description" content="OROMIQ: Risolviamo le tue sfide digitali con strategie personalizzate. Aumentiamo visibilità, lead e conversioni per la tua azienda.">
+    <meta name="keywords" content="agenzia digitale, marketing strategico, web design, SEO, branding, crescita aziendale, lead generation">
     <meta name="author" content="OROMIQ">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.oromiq.com/">
-    <meta property="og:title" content="OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita">
-    <meta property="og:description" content="Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate.">
-    <meta property="og:image" content="https://placehold.co/1200x630/0A0A0A/FFD700?text=OROMIQ">
+    <meta property="og:title" content="OROMIQ – Digital Growth Agency | Soluzioni su Misura per il Tuo Business">
+    <meta property="og:description" content="Risolviamo le tue sfide digitali con strategie personalizzate. Aumentiamo visibilità, lead e conversioni per la tua azienda.">
+    <meta property="og:image" content="https://oromiq.com/images/social-preview.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.oromiq.com/">
-    <meta property="twitter:title" content="OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita">
-    <meta property="twitter:description" content="Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/0A0A0A/FFD700?text=OROMIQ">
+    <meta property="twitter:title" content="OROMIQ – Digital Growth Agency | Soluzioni su Misura per il Tuo Business">
+    <meta property="twitter:description" content="Risolviamo le tue sfide digitali con strategie personalizzate. Aumentiamo visibilità, lead e conversioni per la tua azienda.">
+    <meta property="twitter:image" content="https://oromiq.com/images/social-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -35,8 +39,10 @@
     <style>
         :root {
             --color-black: #0A0A0A;
+            --color-dark: #1A1A1A;
             --color-gold: #FFD700;
             --color-crimson: #DC143C;
+            --color-light: #F8F8F8;
             --font-montserrat: 'Montserrat', sans-serif;
             --font-open-sans: 'Open Sans', sans-serif;
         }
@@ -120,77 +126,24 @@
             opacity: 0.7;
         }
 
-        /* Hero Heading Glitch Effect */
-        .glitch {
+        /* Hero Heading */
+        .hero-heading {
             position: relative;
             font-size: 6rem;
             font-weight: 900;
             color: #FFF;
             text-shadow: 0 0 10px var(--color-gold), 0 0 20px var(--color-crimson);
-            animation: glitch-anim 2.5s infinite linear alternate-reverse;
             background: linear-gradient(45deg, var(--color-gold), var(--color-crimson), var(--color-gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 200% 200%;
-            animation: gradientGlow 5s ease infinite, glitch-anim 2.5s infinite linear alternate-reverse;
+            animation: gradientGlow 5s ease infinite;
         }
 
         @keyframes gradientGlow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
-        }
-
-        .glitch:before,
-        .glitch:after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, var(--color-gold), var(--color-crimson));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .glitch:before {
-            left: 2px;
-            text-shadow: -2px 0 var(--color-crimson);
-            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
-        }
-
-        .glitch:after {
-            left: -2px;
-            text-shadow: -2px 0 var(--color-gold);
-            animation: glitch-anim-2 2.5s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch-anim {
-            0% { clip-path: inset(30% 0 70% 0); }
-            20% { clip-path: inset(50% 0 50% 0); }
-            40% { clip-path: inset(20% 0 80% 0); }
-            60% { clip-path: inset(70% 0 30% 0); }
-            80% { clip-path: inset(10% 0 90% 0); }
-            100% { clip-path: inset(40% 0 60% 0); }
-        }
-
-        @keyframes glitch-anim-1 {
-            0% { clip-path: inset(25% 0 75% 0); transform: translateX(5px); }
-            20% { clip-path: inset(45% 0 55% 0); transform: translateX(-5px); }
-            40% { clip-path: inset(15% 0 85% 0); transform: translateX(5px); }
-            60% { clip-path: inset(65% 0 35% 0); transform: translateX(-5px); }
-            80% { clip-path: inset(5% 0 95% 0); transform: translateX(5px); }
-            100% { clip-path: inset(35% 0 65% 0); transform: translateX(-5px); }
-        }
-
-        @keyframes glitch-anim-2 {
-            0% { clip-path: inset(35% 0 65% 0); transform: translateX(-5px); }
-            20% { clip-path: inset(55% 0 45% 0); transform: translateX(5px); }
-            40% { clip-path: inset(25% 0 75% 0); transform: translateX(-5px); }
-            60% { clip-path: inset(75% 0 25% 0); transform: translateX(5px); }
-            80% { clip-path: inset(15% 0 85% 0); transform: translateX(-5px); }
-            100% { clip-path: inset(45% 0 55% 0); transform: translateX(5px); }
         }
 
         .neon-gold {
@@ -306,104 +259,97 @@
             100% { background-position: 100% 50%; }
         }
 
-        /* Founder Section - Rotating Gradient Border */
-        .founder-img-frame {
+        /* Problem-Solution Cards */
+        .problem-solution-card {
             position: relative;
-            border-radius: 50%;
-            padding: 5px;
+            border-radius: 1rem;
             overflow: hidden;
-            background: var(--color-black);
+            transition: all 0.5s ease;
         }
 
-        .founder-img-frame::before {
+        .problem-solution-card .problem-side,
+        .problem-solution-card .solution-side {
+            padding: 2rem;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .problem-solution-card .problem-side {
+            background: rgba(220, 20, 60, 0.1);
+            border: 1px solid rgba(220, 20, 60, 0.3);
+        }
+
+        .problem-solution-card .solution-side {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .problem-solution-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Client Results Section */
+        .client-results-card {
+            border-left: 4px solid var(--color-gold);
+            transition: all 0.3s ease;
+        }
+
+        .client-results-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Service Cards */
+        .service-card {
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom-color: var(--color-gold);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Process Steps */
+        .process-step {
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .process-step:before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: conic-gradient(from 0deg, transparent 0%, var(--color-gold) 20%, var(--color-crimson) 40%, transparent 60%, transparent 100%);
-            animation: rotateBorder 4s linear infinite;
-            z-index: 0;
-        }
-
-        .founder-img-frame img {
-            position: relative;
-            z-index: 1;
-            border-radius: 50%;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @keyframes rotateBorder {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /* Animated Glyph Icons in Heritage Section */
-        .heritage-glyph-icon {
-            filter: drop-shadow(0 0 5px var(--color-gold)) drop-shadow(0 0 10px var(--color-crimson));
-            transition: transform 0.3s ease, filter 0.3s ease;
-        }
-        .heritage-glyph-icon:hover {
-            transform: scale(1.1) rotate(10deg);
-            filter: drop-shadow(0 0 10px var(--color-gold)) drop-shadow(0 0 20px var(--color-crimson));
-        }
-
-        /* Portfolio Hover Effects */
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 1rem;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-
-        .portfolio-item img {
-            transition: transform 0.5s ease-out;
-            will-change: transform;
-        }
-
-        .portfolio-item-overlay {
-            position: absolute;
-            top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--color-gold);
+            border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-out;
-            border-radius: inherit;
-        }
-
-        .portfolio-item:hover img {
-            transform: scale(1.05);
-        }
-
-        .portfolio-item:hover .portfolio-item-overlay {
-            opacity: 1;
-            background: linear-gradient(to top, rgba(220, 20, 60, 0.8), rgba(255, 215, 0, 0.8));
-            box-shadow: inset 0 0 20px var(--color-gold), inset 0 0 40px var(--color-crimson);
-        }
-
-        .portfolio-item-title {
-            color: #FFF;
+            justify-content: center;
+            color: var(--color-black);
+            font-weight: bold;
             font-size: 1.5rem;
-            font-weight: 700;
-            text-shadow: 0 0 10px var(--color-gold);
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        .portfolio-item:hover .portfolio-item-title {
-            opacity: 1;
-            transform: translateY(0);
+        .process-step-1:before { content: '1'; }
+        .process-step-2:before { content: '2'; }
+        .process-step-3:before { content: '3'; }
+        .process-step-4:before { content: '4'; }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         /* Contact Form Inputs */
@@ -428,18 +374,12 @@
             font-size: 1.5rem;
             transition: color 0.3s ease, transform 0.3s ease;
             filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
-            animation: socialPulse 4s infinite ease-in-out;
         }
 
         .social-icon:hover {
             color: var(--color-gold);
             transform: scale(1.1);
             filter: drop-shadow(0 0 10px var(--color-gold));
-        }
-
-        @keyframes socialPulse {
-            0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5)); }
-            50% { filter: drop-shadow(0 0 15px var(--color-gold)) drop-shadow(0 0 30px var(--color-crimson)); }
         }
 
         /* Back to Top Button */
@@ -475,7 +415,7 @@
             box-shadow: 0 0 20px var(--color-gold), 0 0 40px var(--color-crimson);
         }
 
-        /* Aramaic Glyph for sections - simple SVG */
+        /* Aramaic Glyph for sections */
         .section-glyph {
             width: 40px;
             height: 40px;
@@ -484,60 +424,9 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Random Floating Glyphs */
-        .floating-glyph {
-            position: absolute;
-            font-size: 3rem;
-            color: var(--color-gold);
-            opacity: 0;
-            pointer-events: none;
-            animation: floatAndFade 15s infinite ease-in-out;
-            filter: drop-shadow(0 0 5px var(--color-gold));
-        }
-
-        @keyframes floatAndFade {
-            0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
-            20% { opacity: 0.1; }
-            50% { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)); opacity: 0.05; }
-            80% { opacity: 0.1; }
-            100% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
-        }
-
-        /* Problem-Solution Cards */
-        .problem-solution-card {
-            position: relative;
-            border-radius: 1rem;
-            overflow: hidden;
-            transition: all 0.5s ease;
-        }
-
-        .problem-solution-card .problem-side,
-        .problem-solution-card .solution-side {
-            padding: 2rem;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .problem-solution-card .problem-side {
-            background: rgba(220, 20, 60, 0.1);
-            border: 1px solid rgba(220, 20, 60, 0.3);
-        }
-
-        .problem-solution-card .solution-side {
-            background: rgba(255, 215, 0, 0.1);
-            border: 1px solid rgba(255, 215, 0, 0.3);
-        }
-
-        .problem-solution-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-        }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .glitch {
+            .hero-heading {
                 font-size: 3.5rem;
             }
             .hero-subtitle {
@@ -547,17 +436,15 @@
                 padding: 0.75rem 2rem;
                 font-size: 0.9rem;
             }
-            .about-content, .founder-content, .contact-content {
-                flex-direction: column;
+            .process-step {
+                padding-left: 0;
+                padding-top: 4rem;
                 text-align: center;
             }
-            .about-image-wrapper, .founder-img-frame {
-                margin-top: 2rem;
-            }
-            .about-image-wrapper {
-                width: 70%;
-                margin-left: auto;
-                margin-right: auto;
+            .process-step:before {
+                left: 50%;
+                top: 1rem;
+                transform: translateX(-50%);
             }
             .portfolio-grid {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -565,7 +452,7 @@
         }
 
         @media (max-width: 480px) {
-            .glitch {
+            .hero-heading {
                 font-size: 2.5rem;
             }
             .hero-subtitle {
@@ -606,19 +493,13 @@
         <!-- Hero Section -->
         <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
             <div class="hero-bg-gradient"></div>
-            <!-- Floating Glyphs -->
-            <div class="floating-glyph" style="top: 10%; left: 5%; --dx: 50px; --dy: 30px; --rot: 15deg; animation-delay: 0s;">&#x05D0;</div>
-            <div class="floating-glyph" style="top: 25%; right: 10%; --dx: -40px; --dy: 60px; --rot: -20deg; animation-delay: 2s;">&#x05D1;</div>
-            <div class="floating-glyph" style="bottom: 15%; left: 15%; --dx: 70px; --dy: -40px; --rot: 25deg; animation-delay: 4s;">&#x05D2;</div>
-            <div class="floating-glyph" style="top: 40%; left: 30%; --dx: -30px; --dy: 20px; --rot: 10deg; animation-delay: 6s;">&#x05D3;</div>
-            <div class="floating-glyph" style="bottom: 5%; right: 25%; --dx: -60px; --dy: -30px; --rot: -15deg; animation-delay: 8s;">&#x05D4;</div>
-
+            
             <div class="relative z-10 p-4">
-                <h1 class="glitch text-7xl md:text-8xl lg:text-9xl font-extrabold mb-4" data-text="OROMIQ">OROMIQ</h1>
-                <p class="hero-subtitle text-xl md:text-2xl lg:text-3xl neon-gold mb-10 font-semibold">Trasformiamo le tue sfide digitali in successi tangibili</p>
+                <h1 class="hero-heading text-7xl md:text-8xl lg:text-9xl font-extrabold mb-4">OROMIQ</h1>
+                <p class="hero-subtitle text-xl md:text-2xl lg:text-3xl neon-gold mb-10 font-semibold">Digital Growth Agency - Risultati misurabili per il tuo business</p>
                 <div class="hero-buttons flex flex-col md:flex-row gap-6 justify-center">
-                    <a href="#contact" class="btn-primary">Parla con un esperto</a>
-                    <a href="#problems" class="btn-secondary">Scopri le soluzioni</a>
+                    <a href="#contact" class="btn-primary">Prenota una consulenza</a>
+                    <a href="#services" class="btn-secondary">Scopri i nostri servizi</a>
                 </div>
             </div>
             <a href="#problems" class="scroll-indicator z-10">
@@ -626,13 +507,13 @@
             </a>
         </section>
 
-        <!-- Problems & Solutions Section -->
+        <!-- Client Problems Section -->
         <section id="problems" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
             <div class="text-center mb-16 reveal-heading">
                 <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L70 25 L50 45 L30 25 Z"/></svg>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Risolviamo i tuoi <span class="neon-gold">problemi digitali</span></h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Risolviamo i problemi che <span class="neon-gold">bloccano la tua crescita</span></h2>
                 <p class="text-lg max-w-3xl mx-auto leading-relaxed">
-                    Ogni giorno le aziende affrontano sfide digitali che limitano il loro potenziale. Ecco come possiamo aiutarti a trasformare questi ostacoli in opportunità di crescita.
+                    Le aziende come la tua affrontano ogni giorno sfide digitali che limitano il loro potenziale. Identifichiamo e risolviamo questi problemi per liberare la tua crescita.
                 </p>
             </div>
 
@@ -641,23 +522,23 @@
                 <div class="problem-solution-card glassmorphic-card neon-border">
                     <div class="problem-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
-                            Il tuo problema
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-triangle"></i></span>
+                            Problema: Visibilità insufficiente
                         </h3>
-                        <p class="text-lg mb-4">Il tuo sito web non converte i visitatori in clienti e non sai come migliorare l'esperienza utente.</p>
+                        <p class="text-lg mb-4">Il tuo sito non compare nelle prime posizioni di Google, perdendo potenziali clienti ogni giorno a vantaggio dei competitor.</p>
                         <div class="mt-auto">
                             <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Perdita di opportunità</span>
                         </div>
                     </div>
                     <div class="solution-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
-                            La nostra soluzione
+                            <span class="text-gold-400 mr-3"><i class="fas fa-chart-line"></i></span>
+                            Soluzione: SEO Strategica
                         </h3>
-                        <p class="text-lg mb-4">Progettiamo interfacce intuitive con percorsi di conversione ottimizzati, aumentando il tasso di conversione fino al 200%.</p>
+                        <p class="text-lg mb-4">Ottimizziamo il tuo sito per i motori di ricerca con tecniche white-hat, aumentando il traffico organico del 300% in 6 mesi.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">UI/UX Design</span>
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Conversion Optimization</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Keyword Research</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Technical SEO</span>
                         </div>
                     </div>
                 </div>
@@ -666,23 +547,23 @@
                 <div class="problem-solution-card glassmorphic-card neon-border">
                     <div class="problem-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
-                            Il tuo problema
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-triangle"></i></span>
+                            Problema: Conversioni basse
                         </h3>
-                        <p class="text-lg mb-4">La tua azienda non è visibile online e fai fatica a raggiungere nuovi clienti attraverso i motori di ricerca.</p>
+                        <p class="text-lg mb-4">Il traffico c'è ma le conversioni sono deludenti. I visitatori abbandonano il sito senza compiere azioni.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Bassa visibilità</span>
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">ROI negativo</span>
                         </div>
                     </div>
                     <div class="solution-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
-                            La nostra soluzione
+                            <span class="text-gold-400 mr-3"><i class="fas fa-magic"></i></span>
+                            Soluzione: Conversion Optimization
                         </h3>
-                        <p class="text-lg mb-4">Strategie SEO personalizzate che migliorano il posizionamento organico e aumentano il traffico qualificato del 300%.</p>
+                        <p class="text-lg mb-4">Riprogettiamo l'esperienza utente e i percorsi di conversione, aumentando il tasso di conversione fino al 200%.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">SEO Strategica</span>
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Content Marketing</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">UX Design</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">A/B Testing</span>
                         </div>
                     </div>
                 </div>
@@ -691,23 +572,23 @@
                 <div class="problem-solution-card glassmorphic-card neon-border">
                     <div class="problem-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
-                            Il tuo problema
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-triangle"></i></span>
+                            Problema: Social media inefficaci
                         </h3>
-                        <p class="text-lg mb-4">I tuoi competitor dominano i social media mentre la tua presenza online è inconsistente e poco coinvolgente.</p>
+                        <p class="text-lg mb-4">I tuoi competitor dominano i social mentre i tuoi profili non generano engagement né lead qualificati.</p>
                         <div class="mt-auto">
                             <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Engagement basso</span>
                         </div>
                     </div>
                     <div class="solution-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
-                            La nostra soluzione
+                            <span class="text-gold-400 mr-3"><i class="fas fa-users"></i></span>
+                            Soluzione: Social Media Strategy
                         </h3>
-                        <p class="text-lg mb-4">Piani di social media marketing che costruiscono community fedeli e aumentano l'engagement fino al 400%.</p>
+                        <p class="text-lg mb-4">Creiamo contenuti virali e campagne mirate che costruiscono community e aumentano l'engagement del 400%.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Social Media</span>
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Community Building</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Content Strategy</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Influencer Marketing</span>
                         </div>
                     </div>
                 </div>
@@ -716,106 +597,191 @@
                 <div class="problem-solution-card glassmorphic-card neon-border">
                     <div class="problem-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
-                            Il tuo problema
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-triangle"></i></span>
+                            Problema: Branding debole
                         </h3>
-                        <p class="text-lg mb-4">Non hai una strategia digitale chiara e le tue campagne pubblicitarie online non producono i risultati attesi.</p>
+                        <p class="text-lg mb-4">Il tuo brand non si distingue dalla concorrenza e fatica a creare connessioni emotive con i clienti.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">ROI insoddisfacente</span>
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Mancanza di identità</span>
                         </div>
                     </div>
                     <div class="solution-side">
                         <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
-                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
-                            La nostra soluzione
+                            <span class="text-gold-400 mr-3"><i class="fas fa-palette"></i></span>
+                            Soluzione: Brand Strategy
                         </h3>
-                        <p class="text-lg mb-4">Piani pubblicitari data-driven che ottimizzano il budget e moltiplicano il ritorno sull'investimento.</p>
+                        <p class="text-lg mb-4">Sviluppiamo un'identità visiva e narrativa unica che differenzia il tuo brand e aumenta il valore percepito.</p>
                         <div class="mt-auto">
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Advertising</span>
-                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Analytics</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Logo Design</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Storytelling</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-black to-gray-900">
+            <div class="container mx-auto">
+                <div class="text-center mb-16 reveal-heading">
+                    <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 55 L70 75 L50 95 L30 75 Z"/></svg>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">I nostri <span class="neon-gold">servizi</span></h2>
+                    <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+                        Soluzioni integrate per ogni aspetto della tua presenza digitale, progettate per generare risultati tangibili.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-search"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">SEO & Content Marketing</h3>
+                        <p class="text-lg mb-6">Strategie organiche per posizionare il tuo brand in cima ai motori di ricerca e attrarre traffico qualificato.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Keyword research avanzata</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Creazione contenuti ottimizzati</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Link building strategica</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-ad"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Advertising Digitale</h3>
+                        <p class="text-lg mb-6">Campagne pubblicitarie performanti su Google, Facebook, Instagram e LinkedIn per generare lead qualificati.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> PPC e campagne display</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Remarketing strategico</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Ottimizzazione ROI</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Web Design & Development</h3>
+                        <p class="text-lg mb-6">Siti web performanti e conversion-oriented che trasformano visitatori in clienti.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Design responsive e moderno</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Architettura conversion-focused</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Integrazioni e-commerce</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-users"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Social Media Management</h3>
+                        <p class="text-lg mb-6">Strategie per costruire community fedeli e aumentare l'engagement sui social network.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Content calendar strategica</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Community management</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Analisi delle performance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Branding & Design</h3>
+                        <p class="text-lg mb-6">Identità visiva unica che differenzia il tuo brand e crea connessioni emotive con il pubblico.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Logo e identità visiva</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Brand strategy e storytelling</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Materiali grafici coordinati</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card glassmorphic-card p-8 reveal-item">
+                        <div class="text-gold-400 text-4xl mb-4"><i class="fas fa-chart-pie"></i></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Analytics & Optimization</h3>
+                        <p class="text-lg mb-6">Monitoraggio dati e ottimizzazioni continue per massimizzare il ROI dei tuoi investimenti digitali.</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Implementazione analytics</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Report personalizzati</li>
+                            <li class="flex items-start"><i class="fas fa-check text-gold-400 mr-2 mt-1"></i> Ottimizzazioni data-driven</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Results Section -->
-        <section id="results" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-black to-gray-900">
-            <div class="container mx-auto text-center">
-                <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 55 L70 75 L50 95 L30 75 Z"/></svg>
-                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">Risultati <span class="neon-gold">Tangibili</span></h2>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-                    <div class="glassmorphic-card p-6 reveal-item">
-                        <div class="text-5xl font-bold text-gold-400 mb-3">+300%</div>
-                        <p class="text-lg">Aumento traffico organico</p>
-                    </div>
-                    <div class="glassmorphic-card p-6 reveal-item">
-                        <div class="text-5xl font-bold text-gold-400 mb-3">+200%</div>
-                        <p class="text-lg">Conversioni online</p>
-                    </div>
-                    <div class="glassmorphic-card p-6 reveal-item">
-                        <div class="text-5xl font-bold text-gold-400 mb-3">+150%</div>
-                        <p class="text-lg">Lead qualificati</p>
-                    </div>
-                    <div class="glassmorphic-card p-6 reveal-item">
-                        <div class="text-5xl font-bold text-gold-400 mb-3">+400%</div>
-                        <p class="text-lg">Engagement social</p>
-                    </div>
-                </div>
-
-                <!--  <div class="max-w-4xl mx-auto glassmorphic-card p-8 md:p-12 text-left">
-                    <h3 class="text-3xl font-bold text-white mb-6">Cosa dicono i nostri clienti</h3>
-                    <div class="space-y-6">
-                        <div class="border-l-4 border-gold-400 pl-4">
-                            <p class="text-lg italic">"OROMIQ ha completamente trasformato la nostra presenza online. In soli 3 mesi abbiamo triplicato le conversioni e ridotto del 40% il costo per acquisizione cliente."</p>
-                            <p class="font-semibold mt-3 text-gold-400">- Marco Rossi, CEO di Luxury Italian Brands</p>
-                        </div>
-                        <div class="border-l-4 border-gold-400 pl-4">
-                            <p class="text-lg italic">"Finalmente un'agenzia che capisce davvero le nostre esigenze. La loro strategia SEO ci ha portato al primo posto su Google per parole chiave fondamentali per il nostro business."</p>
-                            <p class="font-semibold mt-3 text-gold-400">- Elena Bianchi, Fondatrice di Bellezza Italiana</p>
-                        </div>
-                    </div>>
-                </div> -->
-                
-              
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section id="process" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
+        <section id="results" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
             <div class="text-center mb-16 reveal-heading">
                 <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 40 L40 50 L20 60 L0 50 Z"/></svg>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Il nostro <span class="neon-gold">Approccio</span></h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Risultati che <span class="neon-gold">parlano da soli</span></h2>
                 <p class="text-lg max-w-3xl mx-auto leading-relaxed">
-                    Un processo collaudato che garantisce risultati misurabili e un'esperienza senza stress per te.
+                    Ecco alcuni dei risultati che abbiamo aiutato i nostri clienti a raggiungere negli ultimi 12 mesi.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Step 1 -->
-                <div class="glassmorphic-card p-6 text-center reveal-item">
-                    <div class="text-4xl font-bold text-gold-400 mb-4">1</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Analisi</h3>
-                    <p class="text-md">Identifichiamo le tue sfide e opportunità attraverso un'approfondita analisi del mercato e della concorrenza.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="glassmorphic-card p-8 text-center reveal-item">
+                    <div class="text-5xl font-bold text-gold-400 mb-3">+320%</div>
+                    <p class="text-lg">Aumento traffico organico</p>
+                    <p class="text-sm text-gray-400 mt-2">per un'azienda di arredamento</p>
                 </div>
-                <!-- Step 2 -->
-                <div class="glassmorphic-card p-6 text-center reveal-item">
-                    <div class="text-4xl font-bold text-gold-400 mb-4">2</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Strategia</h3>
-                    <p class="text-md">Creiamo un piano personalizzato con obiettivi chiari e metriche di successo definite.</p>
+                <div class="glassmorphic-card p-8 text-center reveal-item">
+                    <div class="text-5xl font-bold text-gold-400 mb-3">-45%</div>
+                    <p class="text-lg">Riduzione costo per lead</p>
+                    <p class="text-sm text-gray-400 mt-2">per un servizio B2B</p>
                 </div>
-                <!-- Step 3 -->
-                <div class="glassmorphic-card p-6 text-center reveal-item">
-                    <div class="text-4xl font-bold text-gold-400 mb-4">3</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Esecuzione</h3>
-                    <p class="text-md">Implementiamo la strategia con precisione, mantenendoti informato ad ogni passo.</p>
+                <div class="glassmorphic-card p-8 text-center reveal-item">
+                    <div class="text-5xl font-bold text-gold-400 mb-3">+180%</div>
+                    <p class="text-lg">Aumento conversioni e-commerce</p>
+                    <p class="text-sm text-gray-400 mt-2">per un brand di moda</p>
                 </div>
-                <!-- Step 4 -->
-                <div class="glassmorphic-card p-6 text-center reveal-item">
-                    <div class="text-4xl font-bold text-gold-400 mb-4">4</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Ottimizzazione</h3>
-                    <p class="text-md">Monitoriamo i risultati e perfezioniamo costantemente la strategia per massimizzare il ROI.</p>
+            </div>
+<!--<div class="max-w-4xl mx-auto glassmorphic-card p-8 md:p-12 reveal-item">
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-24 h-24 rounded-full bg-gray-700 flex items-center justify-center text-4xl text-gold-400">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xl italic mb-4">"OROMIQ ha completamente trasformato la nostra presenza online. In soli 6 mesi abbiamo triplicato le conversioni e ridotto del 45% il costo per acquisizione cliente. Il loro approccio strategico ha fatto la differenza."</p>
+                        <p class="font-semibold text-gold-400">Marco Rossi, CEO di Luxury Italian Brands</p>
+                    </div>
+                </div>
+            </div> -->
+            
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-900 to-black">
+            <div class="container mx-auto">
+                <div class="text-center mb-16 reveal-heading">
+                    <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M80 40 L100 50 L80 60 L60 50 Z"/></svg>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Il nostro <span class="neon-gold">metodo</span></h2>
+                    <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+                        Un processo strutturato in 4 fasi che garantisce risultati misurabili e un'esperienza senza stress per te.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="process-step process-step-1 reveal-item">
+                        <h3 class="text-2xl font-bold text-white mb-4">Analisi Strategica</h3>
+                        <p class="text-lg">Identifichiamo le tue sfide e opportunità attraverso un'approfondita analisi del mercato, della concorrenza e del tuo pubblico target. Definiamo insieme gli obiettivi chiave e le metriche di successo.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step process-step-2 reveal-item">
+                        <h3 class="text-2xl font-bold text-white mb-4">Pianificazione</h3>
+                        <p class="text-lg">Sviluppiamo una strategia personalizzata con roadmap chiara, budget ottimizzato e timeline realistica. Presentiamo il piano completo per la tua approvazione prima di procedere.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step process-step-3 reveal-item">
+                        <h3 class="text-2xl font-bold text-white mb-4">Implementazione</h3>
+                        <p class="text-lg">Il nostro team di esperti mette in campo la strategia con precisione, mantenendoti informato ad ogni passo attraverso report regolari e meeting di aggiornamento.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step process-step-4 reveal-item">
+                        <h3 class="text-2xl font-bold text-white mb-4">Ottimizzazione</h3>
+                        <p class="text-lg">Monitoriamo costantemente i risultati e perfezioniamo la strategia basandoci sui dati. Garantiamo performance crescenti e massimo ritorno sul tuo investimento.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -858,19 +824,38 @@
                             <input type="email" id="email" name="email" placeholder="La tua email" class="contact-input w-full" required>
                         </div>
                         
-                        <!-- Subject -->
+                        <!-- Phone -->
                         <div>
-                            <input type="text" id="subject" name="subject" placeholder="Oggetto" class="contact-input w-full" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono (facoltativo)" class="contact-input w-full">
+                        </div>
+                        
+                        <!-- Company -->
+                        <div>
+                            <input type="text" id="company" name="company" placeholder="Azienda" class="contact-input w-full">
+                        </div>
+                        
+                        <!-- Service Interest -->
+                        <div>
+                            <select id="service" name="service" class="contact-input w-full">
+                                <option value="" disabled selected>Servizio di interesse</option>
+                                <option value="seo">SEO & Content Marketing</option>
+                                <option value="advertising">Advertising Digitale</option>
+                                <option value="web">Web Design & Development</option>
+                                <option value="social">Social Media Management</option>
+                                <option value="branding">Branding & Design</option>
+                                <option value="analytics">Analytics & Optimization</option>
+                                <option value="full">Pacchetto Completo</option>
+                            </select>
                         </div>
                         
                         <!-- Message -->
                         <div>
-                            <textarea id="message" name="message" rows="6" placeholder="Descrivici le tue esigenze" class="contact-input w-full resize-y" required></textarea>
+                            <textarea id="message" name="message" rows="6" placeholder="Descrivici le tue esigenze e obiettivi" class="contact-input w-full resize-y" required></textarea>
                         </div>
                         
                         <!-- Submit Button -->
-                        <button type="submit" class="btn-primary w-full text-lg liquid-hover-btn">
-                            Invia il messaggio
+                        <button type="submit" class="btn-primary w-full text-lg">
+                            Richiedi consulenza gratuita
                         </button>
                     </form>
                 </div>
@@ -883,6 +868,13 @@
                         <p><i class="fas fa-envelope text-gold-400 mr-3"></i> info@oromiq.com</p>
                         <p><i class="fas fa-phone-alt text-gold-400 mr-3"></i> +39 02 1234567</p>
                     </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold text-white mb-4">Orari di ufficio</h4>
+                        <p class="text-gray-300">Lunedì - Venerdì: 9:00 - 18:00</p>
+                        <p class="text-gray-300">Sabato - Domenica: Chiuso</p>
+                    </div>
+                    
                     <div class="flex gap-6 mt-8">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
@@ -891,25 +883,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- JavaScript for mailto redirect -->
-        <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const name = encodeURIComponent(document.getElementById('name').value);
-            const email = encodeURIComponent(document.getElementById('email').value);
-            const subject = encodeURIComponent(document.getElementById('subject').value);
-            const message = encodeURIComponent(document.getElementById('message').value);
-
-            const targetEmail = "info@oromiq.com";
-
-            const mailtoLink = `mailto:${targetEmail}?subject=${subject}&body=Nome:%20${name}%0AEmail:%20${email}%0A%0AMessaggio:%0A${message}`;
-
-            window.location.href = mailtoLink;
-        });
-        </script>
-
     </main>
 
     <!-- Footer -->
@@ -1087,25 +1060,50 @@
             animateParticles();
         });
 
-        // Floating Glyphs animation setup
-        document.querySelectorAll('.floating-glyph').forEach(glyph => {
-            const delay = parseFloat(glyph.style.animationDelay);
-            const duration = parseFloat(glyph.style.animationDuration);
-
-            gsap.to(glyph, {
-                opacity: 0.1,
-                y: 'random(-50, 50)',
-                x: 'random(-50, 50)',
-                rotation: 'random(-30, 30)',
-                scale: 'random(0.8, 1.2)',
-                ease: 'none',
-                repeat: -1,
-                yoyo: true,
-                duration: 'random(10, 20)',
-                delay: delay,
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the data to your server
+            // For this example, we'll just show an alert and reset the form
+            alert(`Grazie ${name} per la tua richiesta! Ti contatteremo al più presto.`);
+            this.reset();
+            
+            // In a real implementation, you would use fetch or AJAX to send the data:
+            /*
+            fetch('/send-contact-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    company: company,
+                    service: service,
+                    message: message
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Grazie per il tuo messaggio! Ti risponderemo al più presto.');
+                document.getElementById('contactForm').reset();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Si è verificato un errore. Per favore riprova più tardi.');
             });
+            */
         });
-
     </script>
 </body>
 </html>
