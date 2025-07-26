@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OROMIQ – The Digital Agency Where Heritage Meets Innovation</title>
-    <meta name="description" content="OROMIQ: Unleashing Digital Power where 7,000 years of Aramaic heritage fuses with cutting-edge digital strategy. Legacy + Strategy = Power.">
-    <meta name="keywords" content="OROMIQ, digital agency, heritage, innovation, marketing, web design, SEO, branding, Aramaic, futuristic, luxury">
+    <title>OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita</title>
+    <meta name="description" content="OROMIQ: Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate che uniscono saggezza antica e innovazione moderna.">
+    <meta name="keywords" content="OROMIQ, soluzioni digitali, marketing, web design, SEO, branding, crescita aziendale, strategia digitale">
     <meta name="author" content="OROMIQ">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.oromiq.com/">
-    <meta property="og:title" content="OROMIQ – The Digital Agency Where Heritage Meets Innovation">
-    <meta property="og:description" content="OROMIQ: Unleashing Digital Power where 7,000 years of Aramaic heritage fuses with cutting-edge digital strategy. Legacy + Strategy = Power.">
+    <meta property="og:title" content="OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita">
+    <meta property="og:description" content="Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate.">
     <meta property="og:image" content="https://placehold.co/1200x630/0A0A0A/FFD700?text=OROMIQ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.oromiq.com/">
-    <meta property="twitter:title" content="OROMIQ – The Digital Agency Where Heritage Meets Innovation">
-    <meta property="twitter:description" content="OROMIQ: Unleashing Digital Power where 7,000 years of Aramaic heritage fuses with cutting-edge digital strategy. Legacy + Strategy = Power.">
+    <meta property="twitter:title" content="OROMIQ – Soluzioni Digitali su Misura per la Tua Crescita">
+    <meta property="twitter:description" content="Trasformiamo le tue sfide digitali in opportunità concrete con strategie personalizzate.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/0A0A0A/FFD700?text=OROMIQ">
 
     <!-- Google Fonts -->
@@ -48,7 +48,7 @@
         body {
             font-family: var(--font-open-sans);
             background-color: var(--color-black);
-            color: #E0E0E0; /* Light grey for body text */
+            color: #E0E0E0;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -207,7 +207,7 @@
             overflow: hidden;
             z-index: 10;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Initial subtle glow */
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
 
         .btn-primary {
@@ -275,7 +275,7 @@
 
         /* Glassmorphism Effect */
         .glassmorphic-card {
-            background: rgba(255, 255, 255, 0.05); /* Very subtle white for transparency */
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -291,13 +291,13 @@
         .neon-border::before {
             content: '';
             position: absolute;
-            inset: -2px; /* Adjust to control border thickness */
+            inset: -2px;
             border-radius: inherit;
             background: linear-gradient(45deg, var(--color-gold), var(--color-crimson), var(--color-gold));
             background-size: 200% 200%;
             animation: neonBorderPulse 3s infinite alternate;
             z-index: -1;
-            filter: blur(5px); /* Soften the glow */
+            filter: blur(5px);
             opacity: 0.7;
         }
 
@@ -310,9 +310,9 @@
         .founder-img-frame {
             position: relative;
             border-radius: 50%;
-            padding: 5px; /* Space for the border */
+            padding: 5px;
             overflow: hidden;
-            background: var(--color-black); /* Inner background */
+            background: var(--color-black);
         }
 
         .founder-img-frame::before {
@@ -382,7 +382,7 @@
         }
 
         .portfolio-item:hover img {
-            transform: scale(1.05); /* Zoom */
+            transform: scale(1.05);
         }
 
         .portfolio-item:hover .portfolio-item-overlay {
@@ -503,6 +503,38 @@
             100% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
         }
 
+        /* Problem-Solution Cards */
+        .problem-solution-card {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .problem-solution-card .problem-side,
+        .problem-solution-card .solution-side {
+            padding: 2rem;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .problem-solution-card .problem-side {
+            background: rgba(220, 20, 60, 0.1);
+            border: 1px solid rgba(220, 20, 60, 0.3);
+        }
+
+        .problem-solution-card .solution-side {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .problem-solution-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .glitch {
@@ -561,10 +593,9 @@
     <!-- Preloader -->
     <div id="preloader" class="flex flex-col items-center justify-center text-white text-3xl font-bold">
         <svg class="aramaic-glyph" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <!-- A simple abstract glyph, inspired by ancient symbols -->
             <path d="M50 5 L70 25 L50 45 L30 25 Z M50 55 L70 75 L50 95 L30 75 Z M20 40 L40 50 L20 60 L0 50 Z M80 40 L100 50 L80 60 L60 50 Z" />
         </svg>
-        <p class="mt-4 text-gold-400 text-shadow-lg">Unleashing Digital Power...</p>
+        <p class="mt-4 text-gold-400 text-shadow-lg">Preparando la tua esperienza...</p>
     </div>
 
     <!-- Background Particles Canvas -->
@@ -576,283 +607,308 @@
         <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
             <div class="hero-bg-gradient"></div>
             <!-- Floating Glyphs -->
-            <div class="floating-glyph" style="top: 10%; left: 5%; --dx: 50px; --dy: 30px; --rot: 15deg; animation-delay: 0s;">&#x05D0;</div> <!-- Aleph -->
-            <div class="floating-glyph" style="top: 25%; right: 10%; --dx: -40px; --dy: 60px; --rot: -20deg; animation-delay: 2s;">&#x05D1;</div> <!-- Bet -->
-            <div class="floating-glyph" style="bottom: 15%; left: 15%; --dx: 70px; --dy: -40px; --rot: 25deg; animation-delay: 4s;">&#x05D2;</div> <!-- Gimel -->
-            <div class="floating-glyph" style="top: 40%; left: 30%; --dx: -30px; --dy: 20px; --rot: 10deg; animation-delay: 6s;">&#x05D3;</div> <!-- Dalet -->
-            <div class="floating-glyph" style="bottom: 5%; right: 25%; --dx: -60px; --dy: -30px; --rot: -15deg; animation-delay: 8s;">&#x05D4;</div> <!-- He -->
+            <div class="floating-glyph" style="top: 10%; left: 5%; --dx: 50px; --dy: 30px; --rot: 15deg; animation-delay: 0s;">&#x05D0;</div>
+            <div class="floating-glyph" style="top: 25%; right: 10%; --dx: -40px; --dy: 60px; --rot: -20deg; animation-delay: 2s;">&#x05D1;</div>
+            <div class="floating-glyph" style="bottom: 15%; left: 15%; --dx: 70px; --dy: -40px; --rot: 25deg; animation-delay: 4s;">&#x05D2;</div>
+            <div class="floating-glyph" style="top: 40%; left: 30%; --dx: -30px; --dy: 20px; --rot: 10deg; animation-delay: 6s;">&#x05D3;</div>
+            <div class="floating-glyph" style="bottom: 5%; right: 25%; --dx: -60px; --dy: -30px; --rot: -15deg; animation-delay: 8s;">&#x05D4;</div>
 
             <div class="relative z-10 p-4">
                 <h1 class="glitch text-7xl md:text-8xl lg:text-9xl font-extrabold mb-4" data-text="OROMIQ">OROMIQ</h1>
-                <p class="hero-subtitle text-xl md:text-2xl lg:text-3xl neon-gold mb-10 font-semibold">Legacy + Strategy = Power</p>
+                <p class="hero-subtitle text-xl md:text-2xl lg:text-3xl neon-gold mb-10 font-semibold">Trasformiamo le tue sfide digitali in successi tangibili</p>
                 <div class="hero-buttons flex flex-col md:flex-row gap-6 justify-center">
-                    <a href="#contact" class="btn-primary">Unleash Your Potential</a>
-                    <a href="#services" class="btn-secondary">Explore Services</a>
+                    <a href="#contact" class="btn-primary">Parla con un esperto</a>
+                    <a href="#problems" class="btn-secondary">Scopri le soluzioni</a>
                 </div>
             </div>
-            <a href="#about" class="scroll-indicator z-10">
+            <a href="#problems" class="scroll-indicator z-10">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </section>
 
-        <!-- About OROMIQ Section -->
-        <section id="about" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/2 text-center md:text-left reveal-text">
-                    <svg class="section-glyph mx-auto md:mx-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L70 25 L50 45 L30 25 Z"/></svg>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">About <span class="neon-gold">OROMIQ</span></h2>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        At OROMIQ, we don't just build digital solutions; we forge legacies. Our name, derived from the ancient Aramaic word for "light" or "wisdom," embodies our philosophy: illuminating the path to digital dominance. We are the architects of the future, grounded in the profound wisdom of the past.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        We believe in a unique synergy: <span class="neon-gold font-bold text-shadow-lg">7,000 years of Aramaic heritage fused with cutting-edge digital strategy.</span> This blend allows us to approach modern challenges with unparalleled depth and foresight, delivering results that transcend the ordinary.
-                    </p>
+        <!-- Problems & Solutions Section -->
+        <section id="problems" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
+            <div class="text-center mb-16 reveal-heading">
+                <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L70 25 L50 45 L30 25 Z"/></svg>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Risolviamo i tuoi <span class="neon-gold">problemi digitali</span></h2>
+                <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+                    Ogni giorno le aziende affrontano sfide digitali che limitano il loro potenziale. Ecco come possiamo aiutarti a trasformare questi ostacoli in opportunità di crescita.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Problem-Solution Card 1 -->
+                <div class="problem-solution-card glassmorphic-card neon-border">
+                    <div class="problem-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                            Il tuo problema
+                        </h3>
+                        <p class="text-lg mb-4">Il tuo sito web non converte i visitatori in clienti e non sai come migliorare l'esperienza utente.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Perdita di opportunità</span>
+                        </div>
+                    </div>
+                    <div class="solution-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
+                            La nostra soluzione
+                        </h3>
+                        <p class="text-lg mb-4">Progettiamo interfacce intuitive con percorsi di conversione ottimizzati, aumentando il tasso di conversione fino al 200%.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">UI/UX Design</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Conversion Optimization</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2 flex justify-center reveal-image">
-                    <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden p-2 bg-gradient-to-br from-gold-500 to-crimson-500 shadow-lg">
-                        <div class="absolute inset-0 rounded-full bg-black z-10 flex items-center justify-center">
-                            <img loading="lazy" src="/img/OROMIQ LOGO NO WORD TRANSPARENT.png" alt="OROMIQ Vision" class="rounded-full object-cover w-full h-full p-1">
+
+                <!-- Problem-Solution Card 2 -->
+                <div class="problem-solution-card glassmorphic-card neon-border">
+                    <div class="problem-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                            Il tuo problema
+                        </h3>
+                        <p class="text-lg mb-4">La tua azienda non è visibile online e fai fatica a raggiungere nuovi clienti attraverso i motori di ricerca.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Bassa visibilità</span>
+                        </div>
+                    </div>
+                    <div class="solution-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
+                            La nostra soluzione
+                        </h3>
+                        <p class="text-lg mb-4">Strategie SEO personalizzate che migliorano il posizionamento organico e aumentano il traffico qualificato del 300%.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">SEO Strategica</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Content Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem-Solution Card 3 -->
+                <div class="problem-solution-card glassmorphic-card neon-border">
+                    <div class="problem-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                            Il tuo problema
+                        </h3>
+                        <p class="text-lg mb-4">I tuoi competitor dominano i social media mentre la tua presenza online è inconsistente e poco coinvolgente.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">Engagement basso</span>
+                        </div>
+                    </div>
+                    <div class="solution-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
+                            La nostra soluzione
+                        </h3>
+                        <p class="text-lg mb-4">Piani di social media marketing che costruiscono community fedeli e aumentano l'engagement fino al 400%.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Social Media</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Community Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem-Solution Card 4 -->
+                <div class="problem-solution-card glassmorphic-card neon-border">
+                    <div class="problem-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-crimson-400 mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                            Il tuo problema
+                        </h3>
+                        <p class="text-lg mb-4">Non hai una strategia digitale chiara e le tue campagne pubblicitarie online non producono i risultati attesi.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-crimson-500 bg-opacity-20 text-crimson-300 px-3 py-1 rounded-full text-sm font-semibold">ROI insoddisfacente</span>
+                        </div>
+                    </div>
+                    <div class="solution-side">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-gold-400 mr-3"><i class="fas fa-lightbulb"></i></span>
+                            La nostra soluzione
+                        </h3>
+                        <p class="text-lg mb-4">Piani pubblicitari data-driven che ottimizzano il budget e moltiplicano il ritorno sull'investimento.</p>
+                        <div class="mt-auto">
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold">Advertising</span>
+                            <span class="inline-block bg-gold-500 bg-opacity-20 text-gold-300 px-3 py-1 rounded-full text-sm font-semibold ml-2">Analytics</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Founder Section -->
-        <section id="founder" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
-            <div class="glassmorphic-card p-8 md:p-12 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 reveal-card">
-                <div class="w-full md:w-1/3 flex justify-center">
-                    <div class="founder-img-frame w-48 h-48 md:w-64 md:h-64 rounded-full relative">
-                        <img loading="lazy" src="/img/personal.jpg" alt="OROMIQ Founder">
+        <!-- Results Section -->
+        <section id="results" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-black to-gray-900">
+            <div class="container mx-auto text-center">
+                <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 55 L70 75 L50 95 L30 75 Z"/></svg>
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">Risultati <span class="neon-gold">Tangibili</span></h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                    <div class="glassmorphic-card p-6 reveal-item">
+                        <div class="text-5xl font-bold text-gold-400 mb-3">+300%</div>
+                        <p class="text-lg">Aumento traffico organico</p>
+                    </div>
+                    <div class="glassmorphic-card p-6 reveal-item">
+                        <div class="text-5xl font-bold text-gold-400 mb-3">+200%</div>
+                        <p class="text-lg">Conversioni online</p>
+                    </div>
+                    <div class="glassmorphic-card p-6 reveal-item">
+                        <div class="text-5xl font-bold text-gold-400 mb-3">+150%</div>
+                        <p class="text-lg">Lead qualificati</p>
+                    </div>
+                    <div class="glassmorphic-card p-6 reveal-item">
+                        <div class="text-5xl font-bold text-gold-400 mb-3">+400%</div>
+                        <p class="text-lg">Engagement social</p>
                     </div>
                 </div>
-                <div class="w-full md:w-2/3 text-center md:text-left">
-                    <svg class="section-glyph mx-auto md:mx-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 55 L70 75 L50 95 L30 75 Z"/></svg>
-                    <h3 class="text-3xl md:text-4xl font-bold mb-4 text-white">Meet the <span class="neon-gold">Visionary</span></h3>
-                    <p class="text-lg mb-4 leading-relaxed">
-                        "OROMIQ was born from a deep conviction that true innovation lies in understanding our roots. My journey into ancient Aramaic texts revealed timeless principles of strategy and communication. We apply these very principles, refined over millennia, to the dynamic digital landscape of today."
-                    </p>
-                    <p class="text-xl font-semibold neon-gold">- Fadi Albitar, Founder & Lead Strategist</p>
-                </div>
+
+                <!--  <div class="max-w-4xl mx-auto glassmorphic-card p-8 md:p-12 text-left">
+                    <h3 class="text-3xl font-bold text-white mb-6">Cosa dicono i nostri clienti</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-gold-400 pl-4">
+                            <p class="text-lg italic">"OROMIQ ha completamente trasformato la nostra presenza online. In soli 3 mesi abbiamo triplicato le conversioni e ridotto del 40% il costo per acquisizione cliente."</p>
+                            <p class="font-semibold mt-3 text-gold-400">- Marco Rossi, CEO di Luxury Italian Brands</p>
+                        </div>
+                        <div class="border-l-4 border-gold-400 pl-4">
+                            <p class="text-lg italic">"Finalmente un'agenzia che capisce davvero le nostre esigenze. La loro strategia SEO ci ha portato al primo posto su Google per parole chiave fondamentali per il nostro business."</p>
+                            <p class="font-semibold mt-3 text-gold-400">- Elena Bianchi, Fondatrice di Bellezza Italiana</p>
+                        </div>
+                    </div>>
+                </div> -->
+                
+              
             </div>
         </section>
 
-        <!-- Heritage Section -->
-        <section id="heritage" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 relative overflow-hidden">
-            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/img/text.jpg');"></div>
-            <div class="relative z-10 container mx-auto text-center">
+        <!-- Process Section -->
+        <section id="process" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto">
+            <div class="text-center mb-16 reveal-heading">
                 <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 40 L40 50 L20 60 L0 50 Z"/></svg>
-                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">Our <span class="neon-gold">Heritage</span>, Your Future</h2>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-                    <div class="flex flex-col items-center reveal-item">
-                        <svg class="heritage-glyph-icon w-20 h-20 mb-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0 L100 50 L50 100 L0 50 Z" fill="var(--color-gold)"/></svg>
-                        <p class="text-lg font-semibold text-white">Ancient Wisdom</p>
-                    </div>
-                    <div class="flex flex-col items-center reveal-item">
-                        <svg class="heritage-glyph-icon w-20 h-20 mb-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 20 H80 V80 H20 Z" fill="var(--color-crimson)"/></svg>
-                        <p class="text-lg font-semibold text-white">Strategic Insight</p>
-                    </div>
-                    <div class="flex flex-col items-center reveal-item">
-                        <svg class="heritage-glyph-icon w-20 h-20 mb-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L80 90 L20 90 Z" fill="var(--color-gold)"/></svg>
-                        <p class="text-lg font-semibold text-white">Timeless Principles</p>
-                    </div>
-                    <div class="flex flex-col items-center reveal-item">
-                        <svg class="heritage-glyph-icon w-20 h-20 mb-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M10 50 A40 40 0 1 1 90 50 A40 40 0 1 1 10 50 Z" fill="var(--color-crimson)"/></svg>
-                        <p class="text-lg font-semibold text-white">Enduring Impact</p>
-                    </div>
-                </div>
-
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">Il nostro <span class="neon-gold">Approccio</span></h2>
                 <p class="text-lg max-w-3xl mx-auto leading-relaxed">
-                    The ancient Arameans were pioneers of communication and trade, their language and symbols spreading across vast empires. At OROMIQ, we draw inspiration from this rich history, applying their principles of clarity, connection, and lasting influence to craft modern branding and digital strategies that resonate deeply and stand the test of time.
+                    Un processo collaudato che garantisce risultati misurabili e un'esperienza senza stress per te.
                 </p>
             </div>
-        </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto text-center">
-            <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M80 40 L100 50 L80 60 L60 50 Z"/></svg>
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">Our <span class="neon-gold">Services</span></h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service Card 1: Base -->
-                <div class="glassmorphic-card neon-border p-8 flex flex-col items-center service-card">
-                    <svg class="aramaic-glyph w-16 h-16 mb-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L50 90 M10 50 H90" stroke="var(--color-gold)" stroke-width="8" fill="none"/></svg>
-                    <h3 class="text-2xl font-bold text-white mb-4">Base Ignition</h3>
-                    <p class="text-md mb-6 flex-grow">Essential digital presence: responsive website, basic SEO, social media setup.</p>
-                    <button class="btn-secondary w-full text-gold-400 border-gold-400 hover:bg-gold-400 hover:text-black hover:shadow-gold-lg">Ignite Now</button>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="glassmorphic-card p-6 text-center reveal-item">
+                    <div class="text-4xl font-bold text-gold-400 mb-4">1</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Analisi</h3>
+                    <p class="text-md">Identifichiamo le tue sfide e opportunità attraverso un'approfondita analisi del mercato e della concorrenza.</p>
                 </div>
-
-                <!-- Service Card 2: Growth -->
-                <div class="glassmorphic-card neon-border p-8 flex flex-col items-center service-card">
-                    <svg class="aramaic-glyph w-16 h-16 mb-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20 80 L50 20 L80 80 L50 50 Z" fill="var(--color-crimson)"/></svg>
-                    <h3 class="text-2xl font-bold text-white mb-4">Growth Catalyst</h3>
-                    <p class="text-md mb-6 flex-grow">Advanced SEO, content marketing, targeted ad campaigns, analytics integration.</p>
-                    <button class="btn-secondary w-full text-gold-400 border-gold-400 hover:bg-gold-400 hover:text-black hover:shadow-gold-lg">Accelerate Growth</button>
+                <!-- Step 2 -->
+                <div class="glassmorphic-card p-6 text-center reveal-item">
+                    <div class="text-4xl font-bold text-gold-400 mb-4">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Strategia</h3>
+                    <p class="text-md">Creiamo un piano personalizzato con obiettivi chiari e metriche di successo definite.</p>
                 </div>
-
-                <!-- Service Card 3: Premium -->
-                <div class="glassmorphic-card neon-border p-8 flex flex-col items-center service-card">
-                    <svg class="aramaic-glyph w-16 h-16 mb-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M10 10 H90 V90 H10 Z M50 10 V90 M10 50 H90" stroke="var(--color-gold)" stroke-width="8" fill="none"/></svg>
-                    <h3 class="text-2xl font-bold text-white mb-4">Premium Ascent</h3>
-                    <p class="text-md mb-6 flex-grow">Full-scale branding, UI/UX design, e-commerce solutions, conversion optimization.</p>
-                    <button class="btn-secondary w-full text-gold-400 border-gold-400 hover:bg-gold-400 hover:text-black hover:shadow-gold-lg">Ascend Now</button>
+                <!-- Step 3 -->
+                <div class="glassmorphic-card p-6 text-center reveal-item">
+                    <div class="text-4xl font-bold text-gold-400 mb-4">3</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Esecuzione</h3>
+                    <p class="text-md">Implementiamo la strategia con precisione, mantenendoti informato ad ogni passo.</p>
                 </div>
-
-                <!-- Service Card 4: Elite Custom -->
-                <div class="glassmorphic-card neon-border p-8 flex flex-col items-center service-card">
-                    <svg class="aramaic-glyph w-16 h-16 mb-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 C75 5 95 25 95 50 C95 75 75 95 50 95 C25 95 5 75 5 50 C5 25 25 5 50 5 Z M50 20 C65 20 80 35 80 50 C80 65 65 80 50 80 C35 80 20 65 20 50 C20 35 35 20 50 20 Z" fill="var(--color-crimson)"/></svg>
-                    <h3 class="text-2xl font-bold text-white mb-4">Elite Custom</h3>
-                    <p class="text-md mb-6 flex-grow">Bespoke digital strategy, custom software, immersive experiences, dedicated team.</p>
-                    <button class="btn-secondary w-full text-gold-400 border-gold-400 hover:bg-gold-400 hover:text-black hover:shadow-gold-lg">Craft Your Vision</button>
+                <!-- Step 4 -->
+                <div class="glassmorphic-card p-6 text-center reveal-item">
+                    <div class="text-4xl font-bold text-gold-400 mb-4">4</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ottimizzazione</h3>
+                    <p class="text-md">Monitoriamo i risultati e perfezioniamo costantemente la strategia per massimizzare il ROI.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto text-center">
-            <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M10 50 A40 40 0 1 1 90 50 A40 40 0 1 1 10 50 Z"/></svg>
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">Our <span class="neon-gold">Masterpieces</span></h2>
-
-            <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x400/2A2A2A/FFD700?text=Project+Alpha" alt="Project Alpha" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Alpha</h4>
-                        <p class="text-white text-sm mt-2">Web Design & Branding</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x500/2A2A2A/DC143C?text=Project+Beta" alt="Project Beta" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Beta</h4>
-                        <p class="text-white text-sm mt-2">E-commerce Solution</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x350/2A2A2A/FFD700?text=Project+Gamma" alt="Project Gamma" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Gamma</h4>
-                        <p class="text-white text-sm mt-2">Digital Marketing Campaign</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x450/2A2A2A/DC143C?text=Project+Delta" alt="Project Delta" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Delta</h4>
-                        <p class="text-white text-sm mt-2">UI/UX Redesign</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 5 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x300/2A2A2A/FFD700?text=Project+Epsilon" alt="Project Epsilon" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Epsilon</h4>
-                        <p class="text-white text-sm mt-2">Custom Software</p>
-                    </div>
-                </div>
-                <!-- Portfolio Item 6 -->
-                <div class="portfolio-item reveal-item">
-                    <img loading="lazy" src="https://placehold.co/600x420/2A2A2A/DC143C?text=Project+Zeta" alt="Project Zeta" class="w-full h-auto object-cover rounded-xl">
-                    <div class="portfolio-item-overlay flex-col">
-                        <h4 class="portfolio-item-title">Project Zeta</h4>
-                        <p class="text-white text-sm mt-2">Immersive Experience</p>
-                    </div>
+        <!-- CTA Section -->
+        <section id="cta" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-gray-900 to-black">
+            <div class="container mx-auto text-center">
+                <div class="glassmorphic-card p-8 md:p-12 max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Pronto a trasformare la tua presenza digitale?</h2>
+                    <p class="text-xl mb-8">Prenota una consulenza gratuita con il nostro team e scopri come possiamo aiutarti a raggiungere i tuoi obiettivi.</p>
+                    <a href="#contact" class="btn-primary inline-block">Parla con un esperto</a>
                 </div>
             </div>
-
-            <a href="#" class="btn-primary inline-flex items-center justify-center text-lg neon-hover-btn">
-                See More Projects
-                <i class="fas fa-arrow-right ml-2"></i>
-            </a>
         </section>
 
-       <!-- Contact Section -->
-<section id="contact" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto text-center">
-    <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 20 C65 20 80 35 80 50 C80 65 65 80 50 80 C35 80 20 65 20 50 C20 35 35 20 50 20 Z"/>
-    </svg>
-    
-    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">
-        Unleash Your <span class="neon-gold">Vision</span>
-    </h2>
-
-    <div class="flex flex-col lg:flex-row gap-10 max-w-5xl mx-auto reveal-form">
-        
-        <!-- ✅ Contact Form -->
-        <div class="glassmorphic-card p-8 md:p-10 w-full lg:w-2/3">
-            <h3 class="text-3xl font-bold text-white mb-6">Send Us Your Vision</h3>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 px-4 md:px-8 lg:px-16 container mx-auto text-center">
+            <svg class="section-glyph mx-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 20 C65 20 80 35 80 50 C80 65 65 80 50 80 C35 80 20 65 20 50 C20 35 35 20 50 20 Z"/>
+            </svg>
             
-            <form id="contactForm" class="space-y-6">
-                <!-- Name -->
-                <div>
-                    <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input w-full" required>
-                </div>
-                
-                <!-- Email -->
-                <div>
-                    <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input w-full" required>
-                </div>
-                
-                <!-- Subject -->
-                <div>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-input w-full" required>
-                </div>
-                
-                <!-- Message -->
-                <div>
-                    <textarea id="message" name="message" rows="6" placeholder="Your Message" class="contact-input w-full resize-y" required></textarea>
-                </div>
-                
-                <!-- Submit Button -->
-                <button type="submit" class="btn-primary w-full text-lg liquid-hover-btn">
-                    Send Your Vision
-                </button>
-            </form>
-        </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-white reveal-heading">
+                Contattaci per una <span class="neon-gold">consulenza</span>
+            </h2>
 
-        <!-- ✅ Info Panel -->
-        <div class="glassmorphic-card p-8 md:p-10 w-full lg:w-1/3 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-            <h3 class="text-3xl font-bold text-white mb-6">Connect with <span class="neon-gold">OROMIQ</span></h3>
-            <div class="space-y-4 text-lg text-white">
-                <p><i class="fas fa-map-marker-alt text-gold-400 mr-3"></i> 123 Heritage Way, Digital City, Futuristic Land</p>
-                <p><i class="fas fa-envelope text-gold-400 mr-3"></i> contact@oromiq.com</p>
-                <p><i class="fas fa-phone-alt text-gold-400 mr-3"></i> +1 (555) 123-4567</p>
+            <div class="flex flex-col lg:flex-row gap-10 max-w-5xl mx-auto reveal-form">
+                
+                <!-- Contact Form -->
+                <div class="glassmorphic-card p-8 md:p-10 w-full lg:w-2/3">
+                    <h3 class="text-3xl font-bold text-white mb-6">Inviaci il tuo progetto</h3>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <!-- Name -->
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Il tuo nome" class="contact-input w-full" required>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="La tua email" class="contact-input w-full" required>
+                        </div>
+                        
+                        <!-- Subject -->
+                        <div>
+                            <input type="text" id="subject" name="subject" placeholder="Oggetto" class="contact-input w-full" required>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div>
+                            <textarea id="message" name="message" rows="6" placeholder="Descrivici le tue esigenze" class="contact-input w-full resize-y" required></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-primary w-full text-lg liquid-hover-btn">
+                            Invia il messaggio
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Panel -->
+                <div class="glassmorphic-card p-8 md:p-10 w-full lg:w-1/3 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                    <h3 class="text-3xl font-bold text-white mb-6">Contatta <span class="neon-gold">OROMIQ</span></h3>
+                    <div class="space-y-4 text-lg text-white">
+                        <p><i class="fas fa-map-marker-alt text-gold-400 mr-3"></i> Milano, Italia</p>
+                        <p><i class="fas fa-envelope text-gold-400 mr-3"></i> info@oromiq.com</p>
+                        <p><i class="fas fa-phone-alt text-gold-400 mr-3"></i> +39 02 1234567</p>
+                    </div>
+                    <div class="flex gap-6 mt-8">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="flex gap-6 mt-8">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- ✅ JavaScript for mailto redirect -->
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+        <!-- JavaScript for mailto redirect -->
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    const name = encodeURIComponent(document.getElementById('name').value);
-    const email = encodeURIComponent(document.getElementById('email').value);
-    const subject = encodeURIComponent(document.getElementById('subject').value);
-    const message = encodeURIComponent(document.getElementById('message').value);
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const subject = encodeURIComponent(document.getElementById('subject').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
 
-    // Your email address (where emails will be sent)
-    const targetEmail = "contact@oromiq.com"; // ✅ Change to your real email
+            const targetEmail = "info@oromiq.com";
 
-    // Build mailto link
-    const mailtoLink = `mailto:${targetEmail}?subject=${subject}&body=Name:%20${name}%0AEmail:%20${email}%0A%0AMessage:%0A${message}`;
+            const mailtoLink = `mailto:${targetEmail}?subject=${subject}&body=Nome:%20${name}%0AEmail:%20${email}%0A%0AMessaggio:%0A${message}`;
 
-    // Redirect to mail client
-    window.location.href = mailtoLink;
-});
-</script>
+            window.location.href = mailtoLink;
+        });
+        </script>
 
     </main>
 
@@ -863,13 +919,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             <div class="text-lg font-bold text-white">OROMIQ</div>
             <div class="flex gap-6">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="text-sm">&copy; 2025 OROMIQ. All rights reserved.</p>
+            <p class="text-sm">&copy; 2025 OROMIQ. Tutti i diritti riservati.</p>
         </div>
-        <p class="mt-6 text-xl font-semibold neon-gold">Legacy + Strategy = Power.</p>
+        <p class="mt-6 text-xl font-semibold neon-gold">Trasformiamo le tue sfide digitali in successi tangibili.</p>
     </footer>
 
     <!-- Back to Top Button -->
@@ -888,7 +943,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                 preloader.style.opacity = '0';
                 setTimeout(() => {
                     preloader.style.display = 'none';
-                }, 800); // Wait for fade-out transition
+                }, 800);
             }
         });
 
@@ -905,7 +960,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         // Back to Top Button Logic
         const backToTopButton = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling 300px
+            if (window.scrollY > 300) {
                 backToTopButton.classList.add('show');
             } else {
                 backToTopButton.classList.remove('show');
@@ -951,24 +1006,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             );
         });
 
-        // Staggered reveal for service cards
-        gsap.utils.toArray('.service-card').forEach((card, i) => {
-            gsap.fromTo(card,
-                { opacity: 0, y: 100, scale: 0.8 },
-                {
-                    opacity: 1, y: 0, scale: 1, duration: 0.8, ease: 'back.out(1.7)',
-                    scrollTrigger: {
-                        trigger: card,
-                        start: 'top 85%',
-                        toggleActions: 'play none none reverse',
-                    },
-                    delay: i * 0.1 // Stagger effect
-                }
-            );
-        });
-
-        // Staggered reveal for portfolio items
-        gsap.utils.toArray('.portfolio-item').forEach((item, i) => {
+        // Staggered reveal for items
+        gsap.utils.toArray('.reveal-item').forEach((item, i) => {
             gsap.fromTo(item,
                 { opacity: 0, y: 50 },
                 {
@@ -978,30 +1017,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                         start: 'top 85%',
                         toggleActions: 'play none none reverse',
                     },
-                    delay: i * 0.05 // Stagger effect
+                    delay: i * 0.1
                 }
             );
         });
-
-        // Parallax Tilt for Portfolio Items (simple JS)
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = (y - centerY) / centerY * 5; // Max 5 degrees tilt
-                const rotateY = (x - centerX) / centerX * -5; // Max -5 degrees tilt
-
-                item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
-            });
-        });
-
 
         // Background Particle Animation (Canvas)
         const canvas = document.getElementById('particleCanvas');
@@ -1018,17 +1037,16 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1; // 1 to 3
-                this.speedX = Math.random() * 0.5 - 0.25; // -0.25 to 0.25
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.5 - 0.25;
                 this.speedY = Math.random() * 0.5 - 0.25;
-                this.color = `rgba(255, 215, 0, ${Math.random() * 0.5 + 0.1})`; // Gold with varying opacity
+                this.color = `rgba(255, 215, 0, ${Math.random() * 0.5 + 0.1})`;
             }
 
             update() {
                 this.x += this.speedX;
                 this.y += this.speedY;
 
-                // Wrap particles around
                 if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
                 if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
             }
@@ -1059,7 +1077,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
         window.addEventListener('resize', () => {
             resizeCanvas();
-            initParticles(); // Re-initialize particles on resize
+            initParticles();
         });
 
         // Initialize and start particles after window loads
